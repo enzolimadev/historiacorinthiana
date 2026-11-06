@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro – Área Administrativa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="imagens/LogoDoSite.png">
+  <script src="auth.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="imagens/escudocorinthians.png" class="escudo" width="120" height="120" alt="Escudo do Sport Club Corinthians Paulista">
+    <h1>História Corinthiana</h1>
+  </header>
+  <main style="display:block">
+    <section class="caixa">
+      <h2>Criar conta</h2>
+      <form id="form-cadastro" novalidate>
+        <div class="campo"><label for="nome">Nome completo</label><input type="text" id="nome" autocomplete="name" autofocus></div>
+        <div class="campo"><label for="login">Login</label><input type="text" id="login" autocomplete="username"></div>
+        <div class="campo"><label for="senha">Senha</label><input type="password" id="senha" autocomplete="new-password"></div>
+        <div class="campo"><label for="confirma">Confirmar senha</label><input type="password" id="confirma" autocomplete="new-password"></div>
+        <p id="msg" class="erro" role="alert"></p>
+        <div class="acoes">
+          <button type="submit">Cadastrar</button>
+          <a href="login.html">Já tenho conta</a>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer><p>Desenvolvido por: Enzo Macario e Enzo Lima</p></footer>
+</body>
+</html>

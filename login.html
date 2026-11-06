@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login – Área Administrativa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="imagens/LogoDoSite.png">
+  <script src="auth.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="imagens/escudocorinthians.png" class="escudo" width="120" height="120" alt="Escudo do Sport Club Corinthians Paulista">
+    <h1>História Corinthiana</h1>
+  </header>
+  <main style="display:block">
+    <section class="caixa">
+      <h2>Área administrativa</h2>
+      <form id="form-login" novalidate>
+        <div class="campo">
+          <label for="login">Login</label>
+          <input type="text" id="login" name="login" autocomplete="username" autofocus>
+        </div>
+        <div class="campo">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" autocomplete="current-password">
+        </div>
+        <p class="erro" id="erro" role="alert"></p>
+        <div class="acoes">
+          <button type="submit">Entrar</button>
+          <a href="index.html">Voltar ao site</a>
+        </div>
+      </form>
+      <p style="margin-top:1rem;font-size:.9rem">Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+    </section>
+  </main>
+  <footer><p>Desenvolvido por: Enzo Macario e Enzo Lima</p></footer>
+</body>
+</html>
